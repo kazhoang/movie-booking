@@ -21,6 +21,29 @@ git clone https://github.com/kazhoang/movie-booking.git
 
 2. Navigate to the project directory:
 
+# Movie Booking Test
+
+<img src='.readme/1.png' width=300> <img src='.readme/2.png' width=300>
+
+## 🌱 Prerequisites
+
+Before running the project, ensure that you have the following installed:
+
+- Node.js (version >= 18)
+- React Native CLI
+- Android SDK (for Android development)
+- Xcode (for iOS development)
+
+## ⚙️ Installation
+
+1. Clone the repository:
+
+```
+git clone https://github.com/kazhoang/movie-booking
+```
+
+2. Navigate to the project directory:
+
 ```
 cd movie-booking
 ```
@@ -44,10 +67,16 @@ yarn pod
 ### Android
 
 ```
+```
+
 yarn android
+
 ```
 
 ### IOS
+### IOS
+
+```
 
 ```
 yarn ios
@@ -89,6 +118,7 @@ The project utilizes the following key dependencies:
 For a complete list of dependencies, refer to the `package.json` file.
 
 ## 🏗️ Development
+
 Detox:
 
 To build and test for Android:
