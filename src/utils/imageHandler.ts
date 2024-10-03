@@ -1,6 +1,5 @@
 import { Component } from 'react';
 import { ImageProps, ImageURISource } from 'react-native';
-import RNFS from 'react-native-fs';
 const SHA1 = require('crypto-js/sha1');
 import RNFetchBlob from 'react-native-blob-util';
 
@@ -8,7 +7,8 @@ const s4 = () =>
 	Math.floor((1 + Math.random()) * 0x10000)
 		.toString(16)
 		.substring(1);
-const BASE_DIR = RNFS.CachesDirectoryPath + '/react-native-img-cache';
+
+const BASE_DIR = RNFetchBlob.fs.dirs.CacheDir + '/custom-image-cache';
 export type CacheHandler = (path: string) => void;
 
 export interface CachedImageURISource extends ImageURISource {

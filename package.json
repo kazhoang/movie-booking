@@ -8,7 +8,11 @@
 		"start": "react-native start",
 		"test": "jest",
 		"pod": "cd ios && pod install && cd ..",
-		"clean": "rm -rf node_modules && rm -rf yarn.lock && rm -rf package-lock.json && rm -rf ios/Podfile.lock && rm -rf ios/Pods && yarn cache clean && yarn install --network-concurrency 1 && yarn pod --verbose"
+		"clean": "rm -rf node_modules && rm -rf yarn.lock && rm -rf package-lock.json && rm -rf ios/Podfile.lock && rm -rf ios/Pods && yarn cache clean && yarn install --network-concurrency 1 && yarn pod --verbose",
+		"detox:android:build": "detox build --configuration android.emu.debug",
+		"detox:android:test": "detox test --configuration android.emu.debug",
+		"detox:ios:build": "detox build --configuration ios.sim.debug",
+		"detox:ios:test": "detox test --configuration ios.sim.debug"
 	},
 	"dependencies": {
 		"@react-navigation/bottom-tabs": "^6.6.1",
